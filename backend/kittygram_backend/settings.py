@@ -4,7 +4,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key_for_tests') # как сказал наставник, дефолтное значение необходимо для того, что бы прошли тесты
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
